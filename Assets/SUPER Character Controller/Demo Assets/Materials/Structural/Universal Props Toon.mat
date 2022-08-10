@@ -8,14 +8,14 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Universal Props Toon
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _GLOSSYREFLECTIONS_OFF _METALLICGLOSSMAP _METALLICSPECGLOSSMAP
-    _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
+  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+  m_ShaderKeywords: _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A _SPECULAR_SETUP
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
+  m_CustomRenderQueue: 2000
+  stringTagMap:
+    RenderType: Opaque
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -61,7 +61,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: 613d480184b99334cafa0c2318371ad5, type: 3}
+        m_Texture: {fileID: 2800000, guid: 179dfe7f38856d34da8df97f3553cc05, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -85,7 +85,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 613d480184b99334cafa0c2318371ad5, type: 3}
+        m_Texture: {fileID: 2800000, guid: 179dfe7f38856d34da8df97f3553cc05, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTexture:
@@ -174,7 +174,7 @@ Material:
     - _SrcBlend: 1
     - _Surface: 0
     - _UVSec: 0
-    - _WorkflowMode: 1
+    - _WorkflowMode: 0
     - _ZWrite: 1
     m_Colors:
     - Color_14372ecd59ab433994d94a756f6431d5: {r: 0.9, g: 0.9, b: 0.9, a: 1}
@@ -182,7 +182,7 @@ Material:
     - Color_3E8FA974: {r: 0.5471698, g: 0.5471698, b: 0.5471698, a: 0}
     - Color_D164151B: {r: 1, g: 1, b: 1, a: 0}
     - Color_b59b4b7f6b9c4547a01662aa7f0f37b6: {r: 0, g: 0, b: 0, a: 0.019607844}
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BaseColor: {r: 0.18064928, g: 1, b: 0, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0.039215688}
     - _EmissionColor_HDR: {r: 0, g: 0, b: 0, a: 0}
