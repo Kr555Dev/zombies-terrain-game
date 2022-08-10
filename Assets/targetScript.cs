@@ -6,6 +6,14 @@ public class targetScript : MonoBehaviour
     public float health= 30f;
     //public float moveSpeed = 10f;
     //public GameObject player;
+    //public ParticleSystem boomEffect;
+    //private Animation anim;
+    //public GameObject boomEffect;
+    private void Start()
+    {
+        //anim = GetComponent<Animation>();
+    }
+    
 
     void Update()
     {
@@ -17,10 +25,16 @@ public class targetScript : MonoBehaviour
         if(health <= 0)
         {
             dieZomi();
+            //boomEffect.Play();
         }
     }
     void dieZomi()
     {
+        //boomEffect.Play();
+        //anim.Play("Z_FallingBack");
+        //Instantiate(boomEffect, transform.position, Quaternion.identity);
+        
         Destroy(gameObject);
+
     }
 }

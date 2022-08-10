@@ -9,13 +9,14 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Universal Props Toon
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
-  m_ShaderKeywords: _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A _SPECULAR_SETUP
-  m_LightmapFlags: 6
+  m_ShaderKeywords: _ALPHATEST_ON _DETAIL_MULX2 _METALLICSPECGLOSSMAP _NORMALMAP
+    _OCCLUSIONMAP _PARALLAXMAP _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2000
+  m_CustomRenderQueue: 2450
   stringTagMap:
-    RenderType: Opaque
+    RenderType: TransparentCutout
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -61,23 +62,23 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: 179dfe7f38856d34da8df97f3553cc05, type: 3}
+        m_Texture: {fileID: 2800000, guid: b6c3b8399b2b3c54cbe32c94e3206a7b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: e6f2c743f802ea44ab20fc856e9ed337, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 179dfe7f38856d34da8df97f3553cc05, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailMask:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: bb7fb21294f44974ba010d7559e3efd4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailNormalMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: e6f2c743f802ea44ab20fc856e9ed337, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
@@ -85,7 +86,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 179dfe7f38856d34da8df97f3553cc05, type: 3}
+        m_Texture: {fileID: 2800000, guid: b6c3b8399b2b3c54cbe32c94e3206a7b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTexture:
@@ -93,19 +94,19 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 7099b566b15251f41af697d49947c5cf, type: 3}
+        m_Texture: {fileID: 2800000, guid: 04952c56a0d42784a91102c43a3b1fb3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 119ecf9aab2358745897fd4cb46bb448, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 04952c56a0d42784a91102c43a3b1fb3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: d534abc8c23e069438fac1a136b52fe9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -147,7 +148,7 @@ Material:
     - Vector1_ca10b258a3e5447d801ecab200ddda2b: 2.8
     - Vector1_cb91dad42e184759a9544ab415ea6da6: 1.001
     - Vector1_f72a49ee62d74ef7af747cde5ac0e3be: 0.114
-    - _AlphaClip: 0
+    - _AlphaClip: 1
     - _Blend: 0
     - _BumpScale: 1
     - _ClearCoatMask: 0
@@ -168,13 +169,13 @@ Material:
     - _Parallax: 0.005
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Smoothness: 0.656
+    - _Smoothness: 0.73
     - _SmoothnessTextureChannel: 1
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
     - _UVSec: 0
-    - _WorkflowMode: 0
+    - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
     - Color_14372ecd59ab433994d94a756f6431d5: {r: 0.9, g: 0.9, b: 0.9, a: 1}
@@ -182,7 +183,7 @@ Material:
     - Color_3E8FA974: {r: 0.5471698, g: 0.5471698, b: 0.5471698, a: 0}
     - Color_D164151B: {r: 1, g: 1, b: 1, a: 0}
     - Color_b59b4b7f6b9c4547a01662aa7f0f37b6: {r: 0, g: 0, b: 0, a: 0.019607844}
-    - _BaseColor: {r: 0.18064928, g: 1, b: 0, a: 1}
+    - _BaseColor: {r: 0.10412957, g: 0.4716981, b: 0.13014941, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0.039215688}
     - _EmissionColor_HDR: {r: 0, g: 0, b: 0, a: 0}
